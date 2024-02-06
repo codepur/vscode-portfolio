@@ -16,7 +16,7 @@ const ArticlesPage = ({ articles }) => {
         </a>
       </h3>
       <div className={styles.container}>
-        {articles.lenght &&articles.map((article) => (
+        {articles.length &&articles.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>
