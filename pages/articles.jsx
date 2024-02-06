@@ -16,7 +16,7 @@ const ArticlesPage = ({ articles }) => {
         </a>
       </h3>
       <div className={styles.container}>
-        {articles.map((article) => (
+        {articles.lenght &&articles.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>
@@ -34,7 +34,8 @@ export async function getStaticProps() {
     }
   );
 
-  const data = await res.json();
+  let data = []
+  data =  await res.json();
 
   return {
     props: { title: 'Articles', articles: data },
