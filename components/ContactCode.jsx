@@ -48,16 +48,16 @@ const ContactCode = () => {
       <p className={styles.line}>
         <span className={styles.className}>.socials</span> &#123;
       </p>
-      {contactItems.slice(0, 8).map(({ link,href,social,icon: Icon}, index) => (
+      {contactItems.map(({ link,href,social,icon: Icon}, index) => (
         <p className={styles.line} key={index}>
-          &nbsp;&nbsp;<Icon className=''/>{social}:{' '}
+          &nbsp;&nbsp;<Icon className='mx-2'/>&nbsp;{social}:{' '}&nbsp;
           <a href={href} target="_blank" rel="noopener">
             {link}
           </a>
           ;
         </p>
       ))}
-      {contactItems.slice(8, contactItems.length).map((item, index) => (
+      {/* {contactItems.slice(6, contactItems.length).map((item, index) => (
         <p className={styles.line} key={index}>
           &nbsp;&nbsp;{item.social}:{' '}
           <a href={item.href} target="_blank" rel="noopener">
@@ -65,7 +65,7 @@ const ContactCode = () => {
           </a>
           ;
         </p>
-      ))}
+      ))} */}
       <p className={styles.line}>&#125;</p>
     </div>
   );
