@@ -4,15 +4,15 @@ import styles from '../styles/ContactCode.module.css';
 const contactItems = [
   { 
     icon :  IconWorld,
-    social: 'website',
-    link: 'nitinranganath.me',
-    href: 'https://nitinranganath.me',
+    social: 'portfolio',
+    link: 'codepur',
+    href: 'https://vscode-portfolio-sage.vercel.app/',
   },
   { 
     icon :  IconMail,
     social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    link: 'neerajverma1805@gmail.com',
+    href: 'mailto:neerajverma1805@gmail.com',
   },
   { 
     icon :  IconBrandGithub,
@@ -27,15 +27,9 @@ const contactItems = [
     href: 'https://www.linkedin.com/in/codepur/',
   },
   { 
-    icon :  IconBrandTwitter,
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  { 
     icon :  IconBrandInstagram,
     social: 'instagram',
-    link: 'iamnitinr',
+    link: '_let_variable',
     href: 'https://www.instagram.com/_let_variable',
   },
 
